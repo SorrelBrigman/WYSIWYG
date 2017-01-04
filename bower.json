@@ -1,0 +1,10 @@
+{
+  "name": "WYSIWYG",
+  "main": "WYSIWYG.js",
+  "homepage": "https://github.com/SorrelBrigman/WYSIWYG",
+  "authors": [
+    "Sorrel Brigman <sorrel.k@gmail.com>"
+  ],
+  "description": "class exercise",
+  "license": "MIT"
+}
