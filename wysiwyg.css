@@ -4,4 +4,9 @@
 
 .odd {
   background-color: lightBlue;
+
+}
+
+.dottedBorderSelector {
+  border: 1px dotted black;
 }
