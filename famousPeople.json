@@ -2,7 +2,37 @@
     "people": [
         {
             "title": "Samurai",
-            "name": "Tomoe Gozen",
+            "name": "Tomoe Gozen1",
+            "bio": "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
+            "lifespan": {
+                "birth": 1747,
+                "death": 1797
+            }
+        },
+        {
+            "title": "Samurai2",
+            "name": "Tomoe Gozen2",
+            "bio": "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
+            "lifespan": {
+                "birth": 1747,
+                "death": 1797
+            }
+        },
+        {
+            "title": "Samurai3",
+            "name": "Tomoe Gozen3",
+            "bio": "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
+            "lifespan": {
+                "birth": 1747,
+                "death": 1797
+            }
+        },
+        {
+            "title": "Samurai4",
+            "name": "Tomoe Gozen4",
             "bio": "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
             "lifespan": {
