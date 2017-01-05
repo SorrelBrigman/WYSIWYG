@@ -3,7 +3,7 @@
 var famousPeople;
 
 //event listener to input field
-  $("input").keypress(updateText);
+  $("input").keyup(updateText);
 
 var promise1 = new Promise(function(resolve, reject) {
     $.ajax({
@@ -73,10 +73,11 @@ function updateText(e) {
   //and sets it equal to the value of the input field, changing on every keyup
   if(e.keyCode !== 13) {
     var fieldInput = $("input").val();
-    $(".dottedBorderSelector .bio").text(fieldInput);
+    $(".bio.dottedBorderSelector").text(fieldInput);
 
     //When user hits enter, it posts the changes and unselect the card
   } else if (e.keyCode === 13) {
-    $("input").val = " ";
+    $("input").val("");
+    $("input").blur();
   }
 }
