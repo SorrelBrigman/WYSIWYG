@@ -2,6 +2,9 @@
 
 var famousPeople;
 
+//event listener to input field
+  $("input").keypress(updateText);
+
 var promise1 = new Promise(function(resolve, reject) {
     $.ajax({
       url : "famousPeople.json"
@@ -30,10 +33,13 @@ function fillPage() {
     peopleHTML += `<img class="image" src=${famousPeople.people[i].image} alt="image of ${famousPeople.people[i].name}" width="200" height="200">`;
   }
   peopleHTML += `</div>`;
+  //bind event listeners
   $(".container").html(peopleHTML);
   $(".name").click(dottedBorder);
   $(".bio").click(dottedBorder);
+  $(".bio").click(bioClick);
   $(".image").click(dottedBorder);
+
 }
 
 //When you click on a person's element, a dotted border should go around it.
@@ -44,4 +50,33 @@ function dottedBorder(evt) {
   $(".dottedBorderSelector").removeClass("dottedBorderSelector");
   // add the dotted border to the most recently clicked element
   $(evt.target).addClass("dottedBorderSelector");
+};
+
+
+function bioClick() {
+  //clears any text in the input text field
+  $("input").val(" ");
+    //focuses on input
+  $("input").focus();
+}
+
+///Look at code below, make sure will work for THIS exercise
+//create and bind function for putting focus on the text input when bio click
+
+
+
+
+function updateText(e) {
+  console.log("You're typing in the field");
+
+  //selects the inner text of the selected card's description element
+  //and sets it equal to the value of the input field, changing on every keyup
+  if(e.keyCode !== 13) {
+    var fieldInput = $("input").val();
+    $(".dottedBorderSelector .bio").text(fieldInput);
+
+    //When user hits enter, it posts the changes and unselect the card
+  } else if (e.keyCode === 13) {
+    $("input").val = " ";
+  }
 }
